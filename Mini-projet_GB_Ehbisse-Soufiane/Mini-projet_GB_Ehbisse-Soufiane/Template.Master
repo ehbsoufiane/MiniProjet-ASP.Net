@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="Mini_projet_GB_Ehbisse_Soufiane.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Event Contdown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/styles.css" rel="stylesheet" />
+
+    <link href="Content/material-dashboard.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Default.aspx#about">OVERVIEW</a></li>
+                    <li><a href="Default.aspx#features">FEATURES</a></li>
+                    <li><a href="Default.aspx#places">GALLERY</a></li>
+                    <li><a href="Default.aspx#partners">TEAM</a></li>
+                    <li><a href="Default.aspx#contact">CONTACT</a></li>
+                    <li class="btn-success"><a href="#">REGISTER NOW</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <asp:ContentPlaceHolder ID="JumbotronContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <asp:ContentPlaceHolder ID="GlobalContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Contact Developper <a href="mailto:ehbissesoufian@gmail.com" title=" ">ehbissesoufian@gmail.com</a></p>
+    </footer>
+
+    <script src="Scripts/InitScript.js"></script>
+    <script src="Scripts/CountDown.js"></script>
+    <!--  Google Maps Plugin    -->
+    <!-- script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script -->
+</body>
+</html>
